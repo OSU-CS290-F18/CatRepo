@@ -1,0 +1,78 @@
+<html>
+<head>
+  <style>
+  table {
+    border-style: solid;
+  }
+
+  th,td {
+    border-style: solid;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<h1> Cat Information</h1>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">Cats</a>
+  <a href="#adopt">Adopt</a>
+  <a href="volunteer">Volunteer</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<p> Please see information about cats below: </p>
+  <table>
+    <caption><h3>Cats</h3></caption>
+      <tr class="tableHead">
+        <th>Name</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Breed</th>
+        <th>Age</th>
+        <th>Date of Arrival</th>
+        <th>Volunteers</th>
+        <th>Veterinarian</th>
+        <th>Other cats okay?</th>
+        <th>Kids okay?</th>
+        <th>Paired with</th>
+        <th>Adopter Name</th>
+        <th>Medication?</th>
+        <th>Medical Needs</th>
+        <th>Edit Cat Info</th>
+        <th>Delete cat?</th>
+      </tr>
+    <tr class="catInfo">
+      <td>Mr. Meows</td>
+      <td>Orange</td>
+      <td>Large</td>
+      <td>none</td>
+      <td>3</td>
+      <td>2019-03-04</td>
+      <td>Bob</td>
+      <td>Dr. Spock</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Captain Fluffy</td>
+      <td>none</td>
+      <td>Yes</td>
+      <td>Asthma</td>
+      <td><button type="button">Edit</button></td>
+      <td><button type="button">Delete</button></td>
+    </tr>
+  </table>
+
+  <div>
+    <button type="button">Create a New Cat!</button>
+    <button type="button">Search for a Cat</button>
+  </div>
+
+</body>
+</html>

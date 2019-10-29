@@ -1,0 +1,57 @@
+<html>
+<head>
+  <style>
+  table {
+    border-style: solid;
+  }
+
+  th,td {
+    border-style: solid;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<h1> Adopter Information</h1>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">Cats</a>
+  <a href="#adopt">Adopt</a>
+  <a href="volunteer">Volunteer</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<p> Please see information about adopters below: </p>
+  <table>
+    <caption><h3>Adopters</h3></caption>
+      <tr class="tableHead">
+        <th>Name</th>
+        <th>Already cat owner?</th>
+        <th>Children in home?</th>
+        <th>Edit Adopter Info</th>
+        <th>Delete adopter?</th>
+      </tr>
+    <tr class="adoptInfo">
+      <td>Phoebe</td>
+      <td>No</td>
+      <td>Yes</td>
+
+      <td><button type="button">Edit</button></td>
+      <td><button type="button">Delete</button></td>
+    </tr>
+  </table>
+
+  <div>
+    <button type="button">Create a New Adopter</button>
+    <button type="button">Search for an Adopter</button>
+  </div>
+
+</body>
+</html>
