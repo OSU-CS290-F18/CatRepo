@@ -1,33 +1,47 @@
 <html>
 <head>
-  <style>
-  table {
-    border-style: solid;
-  }
-
-  th,td {
-    border-style: solid;
-  }
-  </style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 <h1> Cat Database </h1>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">Cats</a>
-  <a href="#adopt">Adopt</a>
-  <a href="volunteer">Volunteer</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+<nav class="navbar navbar-expand-md">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/catHome.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/newCat.html">Cats</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/adopters.html">Adopt</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/volunteers.html">Volunteer</a>
+      </li>
+    </ul>
   </div>
+</nav>
+
+
+ <div class="search-container">
+   <form action="/action_page.php">
+     <input type="text" placeholder="Search.." name="search">
+     <button type="submit" value = "Submit"><i class="fa fa-search"></i>Submit</button>
+  </form>
 </div>
-<p> This is a paragraph explaining things </p>
-<a href="something" class="button1">Delete</a>
+<!--<a href="something" class="button1">Delete</a>-->
+<p>
+This is a cat adoption site available for the shelter to keep track of information on cats, which volunteers are responsible for their care, and who adopted each cat. 
+Cats are matched with appropriate veterinary care. The database can be used to aid in an adopter’s search for a cat with specific attributes. 
+The website will clearly display which cats are available for adoption, including their specific attributes as well as the volunteers caring for specific cats.
+</p>
 
 </body>
 </html>

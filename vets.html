@@ -1,36 +1,45 @@
 <html>
 <head>
-  <style>
-  table {
-    border-style: solid;
-  }
-
-  th,td {
-    border-style: solid;
-  }
-  </style>
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
 <h1> Veterinarian Information</h1>
 
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#about">Cats</a>
-  <a href="#adopt">Adopt</a>
-  <a href="volunteer">Volunteer</a>
-  <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+<nav class="navbar navbar-expand-md">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="main-navigation">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/catHome.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/newCat.html">Cats</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/adopters.html">Adopt</a>
+      </li>
+	   <li class="nav-item">
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/volunteers.html">Volunteer</a>
+      </li>
+    </ul>
   </div>
+</nav>
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+      <button type="submit" value = "submit" name = "submit"><i class="fa fa-search"></i>Submit</button>
+    </form>
+	
+	
 </div>
-<p> Please see information about vets below: </p>
+<h1> Veterinarians</h1>
   <table>
-    <caption><h3>Veterinarians</h3></caption>
       <tr class="tableHead">
         <th>Name</th>
         <th>Medical Specialties</th>
@@ -42,33 +51,20 @@
       <td>Dr. Spock</td>
       <td>Asthma</td>
       <td>Sesame Street Clinic</td>
-      <td><button type="button">Edit</button></td>
-      <td><button type="button">Delete</button></td>
+      <td><button type="button" class="btn btn-success">Edit</button></td>
+      <td><button type="button" class="btn btn-success">Delete</button></td>
     </tr>
   </table>
 
   <div>
-    <button type="button">Search for a Vet</button>
+    <button type="button" class="btn btn-success">Search for a Vet</button>
   </div>
   
-  <form action="/action_page.php">
-  First name:<br>
-  <input type="text" name="firstname" >
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" >
-  <br><br>
-  Medical Specialties:<br>
-  <input type="text" name="Specialties" >
-  <br>
-  Name of Clinic:<br>
-  <input type="text" name="clinic">
-  <br><br>
-  Vet Info:<br>
-  <input type="text" name="vet info" >
-  <br>
-  <input type="submit" value="Submit">
-</form> 
+   <form action="http://web.engr.oregonstate.edu/~knapplau/340_database/new_vet_form.html">
+    <input type="submit" value="Add A Vet" />
+  </form>
+  
+  
 
 </body>
 </html>

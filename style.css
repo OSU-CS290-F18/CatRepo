@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0px;
+  background: #f2f6e9;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:#6ab446;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 20em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-start;
+}
+
+table {
+  border-style: solid;
+  text-align: center;
+}
+th,td {
+  border-style: solid;
+}
+p {
+  margin: 10px;	
+}
+h3 {
+  color: gray;	
+}
+button {
+  margin: 5px;	
+}
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;	
+}
+form  {
+  margin: 5px;
+}
