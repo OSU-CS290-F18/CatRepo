@@ -6,8 +6,7 @@
 
 <body>
 
-<h1> Veterinarian Information</h1>
-
+<h1> Volunteer Information</h1>
 
 <nav class="navbar navbar-expand-md">
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
@@ -16,58 +15,58 @@
   <div class="collapse navbar-collapse" id="main-navigation">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/catHome.html">Home</a>
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~raosh/CatRepo/catHome.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/newCat.html">Cats</a>
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~raosh/CatRepo/newCat.html">Cats</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/adopters.html">Adopt</a>
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~raosh/CatRepo/adopters.html">Adopt</a>
       </li>
 	   <li class="nav-item">
-        <a class="nav-link" href="http://web.engr.oregonstate.edu/~knapplau/340_database/volunteers.html">Volunteer</a>
+        <a class="nav-link" href="http://web.engr.oregonstate.edu/~raosh/CatRepo/volunteers.html">Volunteer</a>
       </li>
     </ul>
 </nav>
 
+<!--
 <div class="search-container">
   <form action="/action_page.php">
     <input type="text" placeholder="Search.." name="search">
       <button type="submit" value = "submit" name = "submit"><i class="fa fa-search"></i>Submit</button>
     </form>
-	
-	
 </div>
-<h1> Veterinarians</h1>
+-->
+
+<h3> Volunteers</h3>
   <table>
       <tr class="tableHead">
         <th>Name</th>
-        <th>Medical Specialties</th>
-        <th>Name of Clinic</th>
-        <th>Edit Vet Info</th>
-        <th>Delete vet?</th>
+        <th>Birthday</th>
+        <th>Years of Experience</th>
+        <th>Medication Training?</th>
+
+        <th>Edit Volunteer Info</th>
+        <th>Delete Volunteer?</th>
       </tr>
-    <tr class="catInfo">
-      <td>Dr. Spock</td>
-      <td>Asthma</td>
-      <td>Sesame Street Clinic</td>
+    <tr class="volInfo">
+      <td>Brian</td>
+      <td>1990-04-15</td>
+      <td>5</td>
+      <td>Yes</td>
       <td><button type="button" class="btn btn-success">Edit</button></td>
       <td><button type="button" class="btn btn-success">Delete</button></td>
     </tr>
   </table>
 
   <div>
-    <button type="button" class="btn btn-success">Search for a Vet</button>
+    <button type="button" class="btn btn-success">Search for a Volunteer</button>
   </div>
-<<<<<<< HEAD
-  
-   <form action="http://web.engr.oregonstate.edu/~knapplau/340_database/new_vet_form.html">
-    <input type="submit" value="Add A Vet" />
-  </form>
-  
-  
-=======
 
+  
+   <form action="http://web.engr.oregonstate.edu/~knapplau/340_database/new_volunteer_form.html">
+    <input type="button" class="btn btn-success" value="Add A Volunteer" />
+  </form>
   <form action="/action_page.php">
   First name:<br>
   <input type="text" name="firstname" >
@@ -75,18 +74,16 @@
   Last name:<br>
   <input type="text" name="lastname" >
   <br><br>
-  Medical Specialties:<br>
-  <input type="text" name="Specialties" >
+  Years of Experience:<br>
+  <input type="text" name="Yoe" >
   <br>
-  Name of Clinic:<br>
-  <input type="text" name="clinic">
+  Birthday:<br>
+  <input type="text" name="Birthday">
   <br><br>
-  Vet Info:<br>
-  <input type="text" name="vet info" >
+  Medication Training? (y/n):<br>
+  <input type="text" name="Medical Training" >
   <br>
   <input type="submit" value="Submit">
 </form>
->>>>>>> a6b4bef82334659dcd00a00ca94168a6289c172f
-
 </body>
 </html>
