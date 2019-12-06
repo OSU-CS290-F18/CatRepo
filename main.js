@@ -17,7 +17,7 @@ app.set('mysql', mysql);
 app.use('/adopters', require('./adopters.js'));
 app.use('/vets', require('./vets.js'));
 app.use('/volunteers', require('./volunteers.js'));
-app.use('/catHome', require('./catHome.js'));
+/*app.use('/newCat', require('./newCat.js'));*/
 
 
 /*handling page not found stuff */
