@@ -1,7 +1,7 @@
 module.exports = function(){
     var express = require('express');
     var router = express.Router();
-
+    module.exports = router;
     function getAdopters(res, mysql, context, complete){
         mysql.pool.query("SELECT Cats.CatAdopter, Adopters.AdoptCat FROM Cats JOIN Cat_Adopters ON Cats.CatKeyNum=Cat_Adopters.CatID JOIN Adopters ON Cat_Adopters.AdoptID = Adopters.AdopterKeyNum;", function(error, results, fields){
             if(error){
