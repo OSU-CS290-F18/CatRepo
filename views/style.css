@@ -13,7 +13,7 @@ body {
   cursor: pointer;
 }
 .nav-link {
-  margin-right: 20em !important;
+  margin-right: 10em !important;
 }
 .nav-link:hover {
   color: #000;
