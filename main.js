@@ -18,7 +18,7 @@ app.use('/adopters', require('./adopters.js'));
 app.use('/vets', require('./vets.js'));
 app.use('/volunteers', require('./volunteers.js'));
 app.use('/catHome', require('./catHome.js'));
-app.use('/', express.static('public'));
+
 
 /*handling page not found stuff */
 app.use(function(req,res){
