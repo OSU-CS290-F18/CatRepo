@@ -16,6 +16,7 @@ module.exports = function(){
      router.get('/', function(req, res){
         var callbackCount = 0;
         var context = {};
+        context.jsscripts = ["deleteAdopter.js"];
         var mysql = req.app.get('mysql');
         getAdopters(res, mysql, context, complete);
         function complete(){
